@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <title>ex7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="post" method="traitement.php">
+        <fieldset id="f1">
+            <legend id="l1">Votre identité</legend>
+            <ol start="1">
+                <li>Nom : <input type="text" placeholder="Entrez votre Nom ici"/></li>
+                <li>Prénom : <input type="text" placeholder="Entrez votre Prénom ici"/></li>
+                <li>Adresse email : <input type="text" name="email" id="email" placeholder="Entrez votre Email ici"/></li>            
+            </ol>
+        </fieldset>
+    </form>
+    <form action="post" method="traitement2.php">
+        <fieldset id="f2">
+            <legend id="l2">Votre identité</legend>
+            <ol start="1">
+                <li><label for="adresse">Adresse</label> : <textarea name="adresse" rows="5" id="adresse" placeholder="Entrez votre Adresse ici" maxlength="500"></textarea></li>
+                <li><label for="code">Code Postal</label> : <input type="number" name="code" id="code" placeholder="Entrez votre Code Postal ici"/></li>
+                <li><label for="ville">Ville</label> : <input type="text" name="ville" id="ville" placeholder="Entrez votre Ville ici"/></li>            
+            </ol>
+        </fieldset>
+    </form>
+    <form action="post" method="traitement3.php"></form>
+        <fieldset id="f3">
+            <legend id="l3">Votre identité</legend>
+            <ol>
+                <li>Type de Carte Bancaire :</li>
+                    <div><input type="radio" id="mc" name="cb" value="MasterCard"/><label for="mc"></label>Master Card</div>
+                    <div><input type="radio" id="vs" name="cb" value="Visa"/><label for="vs"></label>Visa</div>
+                <li><label for="Prénom">Numéro de carte :  </label><input type="number" name="firstname" id="firstname" placeholder="Entrez votre numéro de carte ici"/></li>
+                <li><label for="Email">Code de sécurité :  </label><input type="password" name="email" id="email" placeholder="Entrez votre code ici"/></li> 
+                <li><label for="Email">Nom du titulaire :  </label><input type="text" name="email" id="email" placeholder="Entrez votre nom ici"/></li>           
+            </ol>
+        </fieldset>
+    </form>
+</body>
+
+</html>
