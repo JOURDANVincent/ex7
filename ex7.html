@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf8" />
+    <meta charset="utf-8" />
     <title>ex7</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="post" method="traitement.php">
+    <form>
         <fieldset id="f1">
             <legend id="l1">Votre identité</legend>
             <ol start="1">
@@ -18,7 +18,7 @@
             </ol>
         </fieldset>
     </form>
-    <form action="post" method="traitement2.php">
+    <form>
         <fieldset id="f2">
             <legend id="l2">Votre identité</legend>
             <ol start="1">
@@ -28,16 +28,17 @@
             </ol>
         </fieldset>
     </form>
-    <form action="post" method="traitement3.php"></form>
+    <form>
         <fieldset id="f3">
             <legend id="l3">Votre identité</legend>
             <ol>
-                <li>Type de Carte Bancaire :</li>
-                    <div><input type="radio" id="mc" name="cb" value="MasterCard"/><label for="mc"></label>Master Card</div>
-                    <div><input type="radio" id="vs" name="cb" value="Visa"/><label for="vs"></label>Visa</div>
-                <li><label for="Prénom">Numéro de carte :  </label><input type="number" name="firstname" id="firstname" placeholder="Entrez votre numéro de carte ici"/></li>
-                <li><label for="Email">Code de sécurité :  </label><input type="password" name="email" id="email" placeholder="Entrez votre code ici"/></li> 
-                <li><label for="Email">Nom du titulaire :  </label><input type="text" name="email" id="email" placeholder="Entrez votre nom ici"/></li>           
+                <li>Type de Carte Bancaire : <br>
+                    <input type="radio" id="mc" name="card"><label for="mc">MasterCard</label><br>
+                    <input type="radio" id="vs" name="card"><label for="vs">Visa</label>
+                </li>  
+                <li><label for="cardnumber">Numéro de carte :  </label><input type="number" name="cardnumber" id="cardnumber" placeholder="Entrez votre numéro de carte ici"/></li>
+                <li><label for="securitycode">Code de sécurité :  </label><input type="password" name="securitycode" id="securitycode" placeholder="Entrez votre code ici"/></li> 
+                <li><label for="ownername">Nom du titulaire :  </label><input type="text" name="ownername" id="ownername" placeholder="Entrez votre nom ici"/></li>           
             </ol>
         </fieldset>
     </form>
