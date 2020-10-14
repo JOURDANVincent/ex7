@@ -1,3 +1,12 @@
+/* html, body {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 1000px;
+} */
+body {
+  font-family: fantasy;
+}
 #f1, #l1{
   background-color: blue; 
 }
@@ -8,4 +17,22 @@
 
 #f3, #l3{
   background-color: rgb(146, 7, 54); 
+}
+
+legend {
+  padding: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+form{
+  margin-bottom: 5px;
+}
+
+fieldset {
+  box-shadow: -3px 3px 5px 3px rgb(53, 52, 52);
+}
+
+input, textarea {
+  border-radius: 3px;
+  border-color: transparent;
 }

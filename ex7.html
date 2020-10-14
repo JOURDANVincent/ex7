@@ -4,7 +4,7 @@
 <head>
     <!--hello-->
     <meta charset="utf-8" />
-    <title>ex7</title>
+    <title>Formulaire/Login/Paiement</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,34 +12,38 @@
     <form>
         <fieldset id="f1">
             <legend id="l1">Votre identité</legend>
-            <ol start="1">
-                <li>Nom : <input type="text" placeholder="Entrez votre Nom ici"/></li>
-                <li>Prénom : <input type="text" placeholder="Entrez votre Prénom ici"/></li>
-                <li>Adresse email : <input type="text" name="email" id="email" placeholder="Entrez votre Email ici"/></li>            
+            <ol>
+                <li><label for="name">Nom</label> : <input type="text" name="identity" id="name" placeholder="Entrez votre Nom ici"/></li>
+                <li><label for="firstName">Prénom</label> : <input type="text" name="identity" id="firstName" placeholder="Entrez votre Prénom ici"/></li>
+                <li><label for="email">Adresse Email</label> : <input type="email" name="identity" id="email" placeholder="Entrez votre Email ici"/></li>            
             </ol>
         </fieldset>
     </form>
     <form>
         <fieldset id="f2">
-            <legend id="l2">Votre identité</legend>
-            <ol start="1">
-                <li><label for="adresse">Adresse</label> : <textarea name="adresse" rows="5" id="adresse" placeholder="Entrez votre Adresse ici" maxlength="500"></textarea></li>
-                <li><label for="code">Code Postal</label> : <input type="number" name="code" id="code" placeholder="Entrez votre Code Postal ici"/></li>
-                <li><label for="ville">Ville</label> : <input type="text" name="ville" id="ville" placeholder="Entrez votre Ville ici"/></li>            
+            <legend id="l2">Adresse de livraison</legend>
+            <ol>
+                <li><label for="adresse">Adresse</label> : <textarea name="address" rows="5" id="adresse" placeholder="Entrez votre Adresse ici" maxlength="500"></textarea></li>
+                <li><label for="code">Code Postal</label> : <input type="number" name="address" id="code" placeholder="Entrez votre Code Postal ici"/></li>
+                <li><label for="ville">Ville</label> : <input type="text" name="address" id="ville" placeholder="Entrez votre Ville ici"/></li>            
             </ol>
         </fieldset>
     </form>
     <form>
         <fieldset id="f3">
-            <legend id="l3">Votre identité</legend>
+            <legend id="l3">Informations de règlement</legend>
             <ol>
                 <li>Type de Carte Bancaire : <br>
-                    <input type="radio" id="mc" name="card"><label for="mc">MasterCard</label><br>
-                    <input type="radio" id="vs" name="card"><label for="vs">Visa</label>
+                    <div>
+                        <input type="radio" id="mc" name="infoCard"><label for="mc"> MasterCard</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="vs" name="infoCard"><label for="vs"> Visa</label>
+                    </div>
                 </li>  
-                <li><label for="cardnumber">Numéro de carte :  </label><input type="number" name="cardnumber" id="cardnumber" placeholder="Entrez votre numéro de carte ici"/></li>
-                <li><label for="securitycode">Code de sécurité :  </label><input type="password" name="securitycode" id="securitycode" placeholder="Entrez votre code ici"/></li> 
-                <li><label for="ownername">Nom du titulaire :  </label><input type="text" name="ownername" id="ownername" placeholder="Entrez votre nom ici"/></li>           
+                <li><label for="cardNumber">Numéro de carte :  </label><input type="number" name="infoCard" id="cardNumber" placeholder="Entrez votre numéro de carte ici"/></li>
+                <li><label for="securityCode">Code de sécurité :  </label><input type="password" name="infoCard" id="securityCode" placeholder="Entrez votre code ici"/></li> 
+                <li><label for="ownerName">Nom du titulaire :  </label><input type="text" name="infoCard" id="ownerName" placeholder="Entrez votre nom ici"/></li>           
             </ol>
         </fieldset>
     </form>
